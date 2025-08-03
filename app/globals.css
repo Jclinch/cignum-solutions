@@ -45,7 +45,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: oklch(0 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -123,16 +123,61 @@
 }
 
 body {
-  background: var(--color-bg-gradient);
+  /* REMOVE: these prevent bg image from showing */
+  /* background: var(--color-bg-gradient); */
+  /* background-color: #0a1124; */
+
   color: var(--color-text);
   font-family: 'Inter', sans-serif;
 }
+
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    /* ❌ REMOVE Tailwind's bg-background if you want transparency */
+    /* @apply bg-background text-foreground; */
+    @apply text-foreground;
   }
 }
+
+@keyframes gradient-fade {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-fade {
+  animation: gradient-fade 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ⏩ Marquee animation for logos */
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-horizontal 30s linear infinite;
+}
+
+

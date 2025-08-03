@@ -1,3 +1,4 @@
+//components\CTA.tsx
 "use client"
 export default function CTA({title, action}: {title:string, action:() => void}) {
   return (

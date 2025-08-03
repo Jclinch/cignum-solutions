@@ -1,120 +1,107 @@
-// // components/WhyChooseUs.tsx (React + TailwindCSS)
+'use client';
 
-// "use client";
-
-// import { CheckCircle, ShieldCheck, Rocket, Cpu } from "lucide-react";
-
-// const features = [
-//   {
-//     icon: <ShieldCheck className="w-8 h-8 text-purple-600" />,
-//     title: "Trusted Security",
-//     desc: "We prioritize your data with enterprise-grade encryption and secure cloud infrastructure.",
-//   },
-
-
-//   {
-//     icon: <Rocket className="w-8 h-8 text-purple-600" />,
-//     title: "Scalable Architecture",
-//     desc: "Built to scale with you. Our infrastructure handles growth without performance compromise.",
-//   },
-//   {
-//     icon: <Cpu className="w-8 h-8 text-purple-600" />,
-//     title: "Advanced Tech Stack",
-//     desc: "We leverage modern technologies like AI, microservices, and edge computing to deliver seamless solutions.",
-//   },
-//   {
-//     icon: <CheckCircle className="w-8 h-8 text-purple-600" />,
-//     title: "Client-Centric Approach",
-//     desc: "We partner with you to solve real business challenges, not just deliver code.",
-//   },
-// ];
-
-// export default function WhyChooseUs() {
-//   return (
-//     <section className="bg-gray-100 py-16 px-6 sm:px-12">
-//       <div className="max-w-7xl mx-auto text-center">
-//         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-//           Why Choose Cignum Solutions?
-//         </h2>
-//         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-//           With a blend of cutting-edge technology, industry expertise, and client-first strategy,
-//           we provide digital solutions that scale and succeed.
-//         </p>
-
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-//           {features.map((feature, index) => (
-//             <div
-//               key={index}
-//               className="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300"
-//             >
-//               <div className="mb-4">{feature.icon}</div>
-//               <h3 className="text-xl font-semibold text-gray-800 mb-2">
-//                 {feature.title}
-//               </h3>
-//               <p className="text-gray-600 text-sm">{feature.desc}</p>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
-"use client";
-
-import { CheckCircle, ShieldCheck, Rocket, Cpu } from "lucide-react";
+import { motion } from "framer-motion";
 
 const features = [
   {
-    icon: <ShieldCheck className="w-8 h-8 text-[var(--color-primary)]" />,
-    title: "Trusted Security",
-    desc: "We prioritize your data with enterprise-grade encryption and secure cloud infrastructure.",
+    image: "/illustrations/compliance.jpg",
+    title: "Licensed & Compliant",
+    description: "Regulated under CBN, FinCEN, and VAS to ensure trusted global operations.",
   },
   {
-    icon: <Rocket className="w-8 h-8 text-[var(--color-primary)]" />,
-    title: "Scalable Architecture",
-    desc: "Built to scale with you. Our infrastructure handles growth without performance compromise.",
+    image: "/illustrations/infrastructure.jpg",
+    title: "Enterprise-Grade Infrastructure",
+    description: "Built to scale with secure APIs, cloud-native services, and compliance hooks.",
   },
   {
-    icon: <Cpu className="w-8 h-8 text-[var(--color-primary)]" />,
-    title: "Advanced Tech Stack",
-    desc: "We leverage modern technologies like AI, microservices, and edge computing to deliver seamless solutions.",
+    image: "/illustrations/global.jpg",
+    title: "Global Presence",
+    description: "Operations and partnerships across Nigeria, UK, USA, and key diaspora markets.",
   },
   {
-    icon: <CheckCircle className="w-8 h-8 text-[var(--color-primary)]" />,
-    title: "Client-Centric Approach",
-    desc: "We partner with you to solve real business challenges, not just deliver code.",
+    image: "/illustrations/onboarding.jpg",
+    title: "Fast Onboarding",
+    description: "Get started in days with white-labeled toolkits and sandbox support.",
   },
+  {
+    image: "/illustrations/partner.jpg",
+    title: "Partner-Centric",
+    description: "Built for fintechs, merchants, and exchanges. We grow with our partners.",
+  },
+];
+
+const logos = [
+  "/logos/binance.svg",
+  "/logos/moniepoint.svg",
+  "/logos/wise.svg",
+  "/logos/paystack.svg",
+  "/logos/coinbase.svg",
+  "/logos/remitly.svg",
+  "/logos/interswitch.svg",
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-[var(--color-card-bg)] py-16 px-6 sm:px-12">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-primary)] mb-4 drop-shadow">
-          Why Choose Cignum Solutions?
-        </h2>
-        <p className="text-[var(--color-muted)] max-w-2xl mx-auto mb-12">
-          With a blend of cutting-edge technology, industry expertise, and client-first strategy,
-          we provide digital solutions that scale and succeed.
+    <section className="py-20 px-4 md:px-10 lg:px-20 bg-transparent relative z-10">
+      {/* Section Heading */}
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold text-white mb-4">Why Choose Cignum?</h2>
+        <p className="text-muted max-w-2xl mx-auto">
+          Trusted by global operators and tailored for borderless financial growth.
         </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-[var(--color-bg)] p-6 rounded-2xl shadow hover:shadow-lg transition-all duration-300 border border-[var(--color-border)]"
-            >
-              <div className="mb-4 flex justify-center">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-[var(--color-primary)] mb-2">
-                {feature.title}
-              </h3>
-              <p className="text-[var(--color-muted)] text-sm">{feature.desc}</p>
-            </div>
-          ))}
-        </div>
       </div>
+
+      {/* Feature Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+        {features.map((feature, i) => (
+          <motion.div
+            key={i}
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            transition={{ delay: i * 0.15 }}
+            className="bg-midnight2 bg-opacity-90 p-6 rounded-xl shadow-md border border-white/10 hover:shadow-lg transition"
+          >
+            <div className="mb-4 flex justify-center">
+              <img
+                src={feature.image}
+                alt={feature.title}
+                className="h-60 w-auto object-contain"
+              />
+            </div>
+
+            <div className="text-center">
+              <h3 className="text-xl text-white font-semibold mb-2">{feature.title}</h3>
+              <p className="text-muted text-sm">{feature.description}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Logos Section */}
+<div className="w-full flex flex-col items-center justify-center mt-8">
+  <h4 className="text-lg font-medium text-white mb-4 text-center">
+    Trusted by:
+  </h4>
+
+  <div className="relative overflow-hidden w-full max-w-5xl">
+    {/* Fade edges (optional) */}
+    {/* <div className="absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-black to-transparent z-10" />
+    <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-black to-transparent z-10" /> */}
+
+    {/* Infinite Scroll Track */}
+    <div className="marquee-track">
+      {[...logos, ...logos].map((logo, i) => (
+        <img
+          key={i}
+          src={logo}
+          alt={`Client ${i}`}
+          className="h-10 w-auto mx-6 grayscale hover:grayscale-0 transition duration-300"
+        />
+      ))}
+   </div>
+
+  </div>
+</div>
     </section>
   );
 }
