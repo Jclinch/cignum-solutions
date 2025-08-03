@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Tooltip } from "react-tooltip";
-import { FaUserCheck, FaWallet, FaExchangeAlt, FaMoneyBillWave, FaArrowRight, FaShieldAlt } from "react-icons/fa";
+// import { Tooltip } from "react-tooltip";
+// import { FaUserCheck, FaWallet, FaExchangeAlt, FaMoneyBillWave, FaArrowRight, FaShieldAlt } from "react-icons/fa";
 import Image from "next/image";
 
 const fiatSteps = [
@@ -54,7 +54,7 @@ const cryptoSteps = [
   },
   {
     title: "Crypto Funding",
-    description: "Fund with stablecoins or native crypto assets.",
+    description: "Fund with stable-coins or native crypto assets.",
     tip: "TRC20, ERC20, and native chains supported.",
     image: "/images/steps/funding.jpg",
   },
@@ -146,9 +146,11 @@ export default function HowItWorks() {
           transition={{ duration: 0.5 }}
           className="max-w-4xl mx-auto bg-midnight2 rounded-xl border border-white/10 p-6 flex flex-col md:flex-row items-center gap-8 shadow-md"
         >
-          <img
+          <Image
             src={currentStep.image}
             alt={currentStep.title}
+            width={240}
+            height={240}
             className="w-[240px] h-auto object-contain"
           />
           <div className="text-left">

@@ -37,7 +37,7 @@ export function IconCloud({ icons, images }: IconCloudProps) {
     startTime: number;
     duration: number;
   } | null>(null);
-  const animationFrameRef = useRef<number>();
+const animationFrameRef = useRef<number | null>(null);
   const rotationRef = useRef(rotation);
   const iconCanvasesRef = useRef<HTMLCanvasElement[]>([]);
   const imagesLoadedRef = useRef<boolean[]>([]);
@@ -77,7 +77,7 @@ export function IconCloud({ icons, images }: IconCloudProps) {
           };
         } else {
           // Handle SVG icons
-          offCtx.scale(0.4, 0.4);
+          offCtx.scale(0.8, 0.4);
           const svgString = renderToString(item as React.ReactElement);
           const img = new Image();
           img.src = "data:image/svg+xml;base64," + btoa(svgString);

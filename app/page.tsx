@@ -7,7 +7,7 @@ import React from "react";
 
 export default function HomePage() {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden bg-[#000000]">
       {/* 🔹 Background Image (no zoom/skew) */}
       <div
         className="absolute inset-0 z-0 bg-center bg-no-repeat bg-fit md:bg-cover"
@@ -20,7 +20,7 @@ export default function HomePage() {
       {/* 🔹 Main Content */}
       <div className="relative z-20">
         <Hero />
-          <SolutionsGrid />
+        <SolutionsGrid />
         <WhyChooseUs />
         <HowItWorks />
         <Industries />
