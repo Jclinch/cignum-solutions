@@ -1,3 +1,4 @@
+//components\IconCloud.tsx
 import { IconCloud } from "@/components/magicui/icon-cloud";
 
 // ✅ Crypto/Finance/Blockchain-focused icons
