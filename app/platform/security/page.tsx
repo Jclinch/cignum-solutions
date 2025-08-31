@@ -1,5 +1,7 @@
 "use client";
 
+import { FaShieldAlt, FaLock, FaDatabase, FaCloud } from "react-icons/fa";
+
 export default function SecurityPage() {
   return (
     <div className="bg-[#050812] text-white px-4 md:px-10 lg:px-20 py-16">
@@ -15,23 +17,24 @@ export default function SecurityPage() {
       {/* Security Features */}
       <section className="mt-12 space-y-6">
         <h2 className="text-2xl text-cyan-400">Highlights</h2>
-        <ul className="space-y-3">
-          <li className="text-neutral-200">
-            <span className="font-bold">99.9% uptime</span>, active-active architecture
-          </li>
-          <li className="text-neutral-200">
-            <span className="font-bold">PCI DSS aligned</span>; SOC 2 (in progress)
-          </li>
-          <li className="text-neutral-200">
-            <span className="font-bold">Encryption</span> in transit and at rest
-          </li>
-          <li className="text-neutral-200">
-            <span className="font-bold">Role-based access (RBAC)</span>, audit logs
-          </li>
-          <li className="text-neutral-200">
-            <span className="font-bold">Monitoring</span>, incident response, disaster recovery
-          </li>
-        </ul>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-col items-center text-center">
+            <FaShieldAlt className="text-cyan-400 text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">99.9% Uptime</h3>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <FaLock className="text-cyan-400 text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">PCI DSS Aligned</h3>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <FaDatabase className="text-cyan-400 text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">Encryption in Transit & at Rest</h3>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <FaCloud className="text-cyan-400 text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">Monitoring & Disaster Recovery</h3>
+          </div>
+        </div>
       </section>
 
       <section className="mt-12">

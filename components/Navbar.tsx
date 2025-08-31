@@ -36,14 +36,8 @@ const navItems = [
   },
   { label: "Industries", path: "/industries" },
   { label: "Pricing", path: "/pricing" },
-  {
-    label: "Resources",
-    children: [
-      { label: "Blog", path: "/resources/blog" },
-      { label: "Guides", path: "/resources/guides" },
-      { label: "Case Studies", path: "/resources/case-studies" },
-    ],
-  },
+  { label: "Resources", path: "/resources" },
+
   {
     label: "Company",
     children: [
@@ -58,7 +52,7 @@ const navItems = [
     children: [
       { label: "Privacy", path: "/legal/privacy" },
       { label: "Terms", path: "/legal/terms" },
-      { label: "Disclosures", path: "/legal/disclosures" },
+      { label: "Compliance", path: "/legal/compliance" },
     ],
   },
 ];

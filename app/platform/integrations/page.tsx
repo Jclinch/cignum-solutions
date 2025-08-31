@@ -1,11 +1,13 @@
 "use client";
 
+import { FaBuilding, FaMoneyBillWave, FaMobileAlt, FaExchangeAlt } from "react-icons/fa";
+
 export default function IntegrationsPage() {
   return (
     <div className="bg-[#050812] text-white px-4 md:px-10 lg:px-20 py-16">
       <section>
         <h1 className="text-4xl font-extrabold text-white uppercase">
-          Bank-Grade Connections—Without the Bank Headaches
+          Bank-grade connections—without the bank headaches
         </h1>
         <p className="text-lg text-neutral-200 mt-4">
           Pre-built connectors to Nigerian banks (e.g., Providus), plus UK/EU partners, payment networks, and mobile money providers.
@@ -15,20 +17,24 @@ export default function IntegrationsPage() {
       {/* Features */}
       <section className="mt-12 space-y-6">
         <h2 className="text-2xl text-cyan-400">Highlights</h2>
-        <ul className="space-y-3">
-          <li className="text-neutral-200">
-            <span className="font-bold">Bank account verification</span> (name match)
-          </li>
-          <li className="text-neutral-200">
-            <span className="font-bold">Faster Payments / SEPA</span> (where applicable)
-          </li>
-          <li className="text-neutral-200">
-            <span className="font-bold">Settlement & ledger sync</span> (API or file-based)
-          </li>
-          <li className="text-neutral-200">
-            <span className="font-bold">Mobile money integrations</span> (depending on region)
-          </li>
-        </ul>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-col items-center text-center">
+            <FaBuilding className="text-cyan-400 text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">Bank Account Verification</h3>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <FaMoneyBillWave className="text-cyan-400 text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">Faster Payments</h3>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <FaExchangeAlt className="text-cyan-400 text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">Settlement & Ledger Sync</h3>
+          </div>
+          <div className="flex flex-col items-center text-center">
+            <FaMobileAlt className="text-cyan-400 text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">Mobile Money Integrations</h3>
+          </div>
+        </div>
       </section>
 
       <section className="mt-12">
