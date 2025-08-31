@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaUserShield, FaSearch, FaFileAlt } from "react-icons/fa";
+import { FaUserShield } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Compliance() {

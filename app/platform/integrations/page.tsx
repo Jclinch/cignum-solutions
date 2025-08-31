@@ -17,24 +17,31 @@ export default function IntegrationsPage() {
       {/* Features */}
       <section className="mt-12 space-y-6">
         <h2 className="text-2xl text-cyan-400">Highlights</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="flex flex-col items-center text-center">
-            <FaBuilding className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-xl font-semibold text-white">Bank Account Verification</h3>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <FaMoneyBillWave className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-xl font-semibold text-white">Faster Payments</h3>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <FaExchangeAlt className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-xl font-semibold text-white">Settlement & Ledger Sync</h3>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <FaMobileAlt className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-xl font-semibold text-white">Mobile Money Integrations</h3>
-          </div>
-        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  <div className="flex flex-col items-center text-center">
+    <FaBuilding className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+    <h3 className="text-lg md:text-xl font-semibold text-white">
+      Bank Account Verification
+    </h3>
+  </div>
+  <div className="flex flex-col items-center text-center">
+    <FaMoneyBillWave className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+    <h3 className="text-lg md:text-xl font-semibold text-white">Faster Payments</h3>
+  </div>
+  <div className="flex flex-col items-center text-center">
+    <FaExchangeAlt className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+    <h3 className="text-lg md:text-xl font-semibold text-white">
+      Settlement & Ledger Sync
+    </h3>
+  </div>
+  <div className="flex flex-col items-center text-center">
+    <FaMobileAlt className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+    <h3 className="text-lg md:text-xl font-semibold text-white">
+      Mobile Money Integrations
+    </h3>
+  </div>
+</div>
+
       </section>
 
       <section className="mt-12">

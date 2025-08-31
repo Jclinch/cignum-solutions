@@ -10,29 +10,37 @@ export default function SecurityPage() {
           Built for Critical Payments
         </h1>
         <p className="text-lg text-neutral-200 mt-4">
-          Security, reliability, and compliance are core to our infrastructure, ensuring you can trust us with your critical payments.
+          Security, reliability, and compliance are core to our infrastructure,
+          ensuring you can trust us with your critical payments.
         </p>
       </section>
 
       {/* Security Features */}
       <section className="mt-12 space-y-6">
         <h2 className="text-2xl text-cyan-400">Highlights</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+       
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex flex-col items-center text-center">
-            <FaShieldAlt className="text-cyan-400 text-6xl mb-4" />
+            <FaShieldAlt className="text-cyan-400 text-4xl md:text-6xl mb-4" />
             <h3 className="text-xl font-semibold text-white">99.9% Uptime</h3>
           </div>
           <div className="flex flex-col items-center text-center">
-            <FaLock className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-xl font-semibold text-white">PCI DSS Aligned</h3>
+            <FaLock className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">
+              PCI DSS Aligned
+            </h3>
           </div>
           <div className="flex flex-col items-center text-center">
-            <FaDatabase className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-xl font-semibold text-white">Encryption in Transit & at Rest</h3>
+            <FaDatabase className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">
+              Encryption in Transit & at Rest
+            </h3>
           </div>
           <div className="flex flex-col items-center text-center">
-            <FaCloud className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-xl font-semibold text-white">Monitoring & Disaster Recovery</h3>
+            <FaCloud className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+            <h3 className="text-xl font-semibold text-white">
+              Monitoring & Disaster Recovery
+            </h3>
           </div>
         </div>
       </section>

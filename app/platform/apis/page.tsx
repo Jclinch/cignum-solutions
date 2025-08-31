@@ -17,24 +17,33 @@ export default function ApisPage() {
       {/* Endpoints and Dev Essentials with Big Icons */}
       <section className="mt-12 space-y-12">
         <h2 className="text-2xl text-cyan-400">Endpoints</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="flex flex-col items-center text-center">
-            <FaCode className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-sm font-semibold text-white">POST /v1/virtual-accounts</h3>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <FaPaperclip className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-sm font-semibold text-white">POST /v1/payouts/bulk</h3>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <FaLink className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-sm font-semibold text-white">GET /v1/balances</h3>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <FaTools className="text-cyan-400 text-6xl mb-4" />
-            <h3 className="text-sm font-semibold text-white">POST /v1/kyc/verify</h3>
-          </div>
-        </div>
+       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+  <div className="flex flex-col items-center text-center">
+    <FaCode className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+    <h3 className="text-xs md:text-sm font-semibold text-white">
+      POST /v1/virtual-accounts
+    </h3>
+  </div>
+  <div className="flex flex-col items-center text-center">
+    <FaPaperclip className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+    <h3 className="text-xs md:text-sm font-semibold text-white">
+      POST /v1/payouts/bulk
+    </h3>
+  </div>
+  <div className="flex flex-col items-center text-center">
+    <FaLink className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+    <h3 className="text-xs md:text-sm font-semibold text-white">
+      GET /v1/balances
+    </h3>
+  </div>
+  <div className="flex flex-col items-center text-center">
+    <FaTools className="text-cyan-400 text-4xl md:text-6xl mb-4" />
+    <h3 className="text-xs md:text-sm font-semibold text-white">
+      POST /v1/kyc/verify
+    </h3>
+  </div>
+</div>
+
 
         <h2 className="text-2xl text-cyan-400 mt-12">Dev Essentials</h2>
         <ul className="space-y-3 text-neutral-200">

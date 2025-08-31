@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaChartLine, FaBalanceScale, FaBell } from "react-icons/fa";
+import { FaChartLine } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Treasury() {

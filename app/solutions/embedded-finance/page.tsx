@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaWallet, FaProjectDiagram, FaUsersCog } from "react-icons/fa";
+import { FaWallet } from "react-icons/fa";
 import Link from "next/link";
 
 export default function EmbeddedFinance() {
