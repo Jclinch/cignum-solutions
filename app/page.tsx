@@ -16,8 +16,8 @@ export default function HomePage() {
     <div className="relative min-h-screen overflow-hidden bg-[#000000]">
       {/* 🔹 Background Image (no zoom/skew) */}
       <div
-        className="absolute inset-0 z-0 bg-center bg-no-repeat bg-fit md:bg-cover"
-        style={{ backgroundImage: 'url("/images/home.jpg")' }}
+        className="absolute inset-0 z-0 bg-top bg-no-repeat bg-contain bg-black"
+        style={{ backgroundImage: 'url("/images/home.png")' }}
       />
 
       {/* 🔹 Animated black-blue gradient overlay */}
