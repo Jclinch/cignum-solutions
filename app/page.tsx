@@ -1,14 +1,14 @@
 import { FeatureHighlights } from "@/components/FeatureHighlights";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Hero } from "@/components/Hero";
-import HowItWorks from "@/components/HowItWorks";
-import Industries from "@/components/Industries";
+// import HowItWorks from "@/components/HowItWorks";
+// import Industries from "@/components/Industries";
 import { ProofStats } from "@/components/ProofStats";
-import SolutionsGrid from "@/components/SolutionsGrid";
+// import SolutionsGrid from "@/components/SolutionsGrid";
 import TrustedBy from "@/components/TrustedBy";
 import { UseCaseCarousel } from "@/components/UseCaseCarousel";
 import { ValuePillars } from "@/components/ValuePillars";
-import WhyChooseUs from "@/components/WhyChooseUs";
+// import WhyChooseUs from "@/components/WhyChooseUs";
 import React from "react";
 
 export default function HomePage() {
@@ -32,10 +32,10 @@ export default function HomePage() {
         <ProofStats />
         <UseCaseCarousel />
         <FinalCTA />
-        <SolutionsGrid />
-        <WhyChooseUs />
-        <HowItWorks />
-        <Industries />
+        {/* <SolutionsGrid /> */}
+        {/* <WhyChooseUs /> */}
+        {/* <HowItWorks /> */}
+        {/* <Industries /> */}
       </div>
     </div>
   );

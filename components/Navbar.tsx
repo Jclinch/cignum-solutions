@@ -104,16 +104,16 @@ export default function Header() {
           <Image
             src="/logo.png" // ⬅️ replace with your logo path (e.g. /public/logo.png)
             alt="Cignum Solutions"
-            width={140} // ⬅️ adjust size as needed
+            width={100} // ⬅️ adjust size as needed
             height={40}
             priority
-            className="h-auto w-auto md:-ml-8"
+            className="md:h-auto md:w-auto md:-ml-8"
           />
         </Link>
 
         {/* Hamburger (Mobile) */}
         <button
-          className="md:hidden flex flex-col justify-center items-center w-8 h-8"
+          className="md:hidden flex flex-col justify-center items-center w-8 h-8 mr-4 "
           aria-label="Toggle menu"
           onClick={() => setMenuOpen((open) => !open)}
         >
