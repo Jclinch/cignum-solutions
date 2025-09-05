@@ -51,7 +51,7 @@ const navItems = [
     label: "Legal",
     children: [
       { label: "Privacy", path: "/legal/privacy" },
-      { label: "Terms", path: "/legal/terms" },
+      { label: "Terms", path: "/legal/terms-of-service" },
       { label: "Compliance", path: "/legal/compliance" },
     ],
   },
