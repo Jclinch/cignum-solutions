@@ -100,21 +100,23 @@ export default function Header() {
     >
       <nav className="container mx-auto md:px-2 flex justify-between items-center relative">
         {/* Logo */}
-      <Link href="/" className="flex items-center">
+     <Link href="/" className="flex items-center">
   <Image
     src="/logo2.png"
     alt="Cignum Solutions"
     width={2395}
     height={1046}
     priority
+    sizes="(max-width: 640px) 120px, (max-width: 768px) 150px, (max-width: 1024px) 200px, 240px"
     className="
-      h-auto 
-      w-[120px] sm:w-[150px] 
-      md:w-[220px] lg:w-[240px] xl:w-[260px]  
-      md:-ml-12
+      object-contain
+      w-[120px] sm:w-[150px]
+      md:w-[200px] lg:w-[220px] xl:w-[240px]
+      md:-ml-6
     "
   />
 </Link>
+
 
 
 
