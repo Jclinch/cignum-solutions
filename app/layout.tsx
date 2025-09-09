@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import 'react-tooltip/dist/react-tooltip.css';
-
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="min-h-screen">
           {children}
+        <Analytics />
         </main>
         <Footer />
       </body>

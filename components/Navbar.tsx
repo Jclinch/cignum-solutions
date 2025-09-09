@@ -104,8 +104,8 @@ export default function Header() {
   <Image
     src="/logo2.png"
     alt="Cignum Solutions"
-    width={2395}
-    height={1046}
+    width={239}
+    height={104}
     priority
     sizes="(max-width: 640px) 120px, (max-width: 768px) 150px, (max-width: 1024px) 200px, 240px"
     className="

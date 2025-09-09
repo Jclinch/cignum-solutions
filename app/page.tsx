@@ -1,7 +1,7 @@
 import { FeatureHighlights } from "@/components/FeatureHighlights";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Hero } from "@/components/Hero";
-// import HowItWorks from "@/components/HowItWorks";
+import { Analytics } from "@vercel/analytics/next"
 // import Industries from "@/components/Industries";
 import { ProofStats } from "@/components/ProofStats";
 // import SolutionsGrid from "@/components/SolutionsGrid";
