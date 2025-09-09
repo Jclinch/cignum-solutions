@@ -107,7 +107,7 @@ export default function Header() {
     width={239}
     height={104}
     priority
-    sizes="(max-width: 640px) 120px, (max-width: 768px) 150px, (max-width: 1024px) 200px, 240px"
+    sizes="(max-width: 440px) 120px, (max-width: 568px) 150px, (max-width: 524px) 100px, 140px"
     className="
       object-contain
       w-[120px] sm:w-[150px]
