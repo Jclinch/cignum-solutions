@@ -16,7 +16,7 @@ const TrustedBy: React.FC = () => {
     <section className="py-12 bg-gray-900/50 text-white mt-8">
       {/* Logos Section */}
       <div className="w-full flex flex-col items-center justify-center mt-8">
-        <h4 className="text-lg font-medium text-white mb-4 text-center">
+        <h4 className="text-center text-4xl font-bold mb-14 bg-gradient-to-r from-yellow-400 via-cyan-400 to-purple-500 text-transparent bg-clip-text">
           Trusted by:
         </h4>
 

@@ -1,13 +1,17 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { HiOutlineRocketLaunch } from 'react-icons/hi2'; // 🚀 icon
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import { Rockets } from "./ui/Meteors";
 
 export const FinalCTA = () => {
   return (
     <section className="relative py-20 bg-[#0a1124] text-white text-center overflow-hidden">
-      {/* 🔹 Background futuristic gradient */}
+      {/* 🔹 Rocket Background */}
+      <Rockets number={25} />
+
+      {/* 🔹 Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-cyan-500/10 to-purple-500/10 blur-2xl" />
 
       <motion.div
@@ -17,7 +21,7 @@ export const FinalCTA = () => {
         viewport={{ once: true }}
         className="relative z-10 max-w-3xl mx-auto px-6"
       >
-        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent drop-shadow-lg">
+        <h2 className="text-center text-4xl font-bold mb-14 bg-gradient-to-r from-yellow-400 via-cyan-400 to-purple-500 text-transparent bg-clip-text">
           Launch in weeks, not months
         </h2>
         <p className="mt-4 text-lg text-neutral-300">
