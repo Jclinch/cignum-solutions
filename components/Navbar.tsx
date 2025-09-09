@@ -102,7 +102,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/logo2.png"
+            src="/logo3.png"
             alt="Cignum Solutions"
             width={339}
             height={104}
