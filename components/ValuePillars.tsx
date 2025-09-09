@@ -168,7 +168,7 @@ export const ValuePillars: React.FC = () => {
               <motion.div
                 key={pillar.id}
                 variants={itemVariants}
-                className="relative group p-8 rounded-2xl bg-[#0f172a]/70 backdrop-blur-md border border-white/10 shadow-lg transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,215,0,0.45)]"
+                className="relative group p-8 rounded-2xl bg-[#0f172a]/20 backdrop-blur-md border border-white/10 shadow-lg transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,215,0,0.45)]"
               >
                 {/* Glow layer */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-yellow-400 via-cyan-400 to-green-400 opacity-0 group-hover:opacity-15 blur-2xl transition duration-500" />
