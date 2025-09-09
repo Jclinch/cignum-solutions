@@ -8,8 +8,8 @@ import { Rockets } from "./ui/Meteors";
 export const FinalCTA = () => {
   return (
     <section className="relative py-20 bg-[#0a1124] text-white text-center overflow-hidden">
-      {/* 🔹 Rocket Background */}
-      <Rockets number={25} />
+      {/* 🔹 Single Rocket Launch */}
+      <Rockets />
 
       {/* 🔹 Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-cyan-500/10 to-purple-500/10 blur-2xl" />

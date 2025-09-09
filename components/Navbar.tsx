@@ -100,25 +100,17 @@ export default function Header() {
     >
       <nav className="container mx-auto md:px-2 flex justify-between items-center relative">
         {/* Logo */}
-     <Link href="/" className="flex items-center">
-  <Image
-    src="/logo2.png"
-    alt="Cignum Solutions"
-    width={239}
-    height={104}
-    priority
-    sizes="(max-width: 440px) 120px, (max-width: 568px) 150px, (max-width: 524px) 100px, 140px"
-    className="
-      object-contain
-      w-[120px] sm:w-[150px]
-      md:w-[200px] lg:w-[220px] xl:w-[240px]
-      md:-ml-6
-    "
-  />
-</Link>
-
-
-
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo2.png"
+            alt="Cignum Solutions"
+            width={339}
+            height={104}
+            priority
+            // sizes="(max-width: 440px) 120px, (max-width: 568px) 150px, (max-width: 524px) 100px, 140px"
+            className="md:-ml-6 w-36 md:w-44 lg:w-48 h-auto"
+          />
+        </Link>
 
         {/* Hamburger (Mobile) */}
         <button
