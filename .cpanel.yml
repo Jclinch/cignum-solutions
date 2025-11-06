@@ -1,19 +1,6 @@
 deployment:
   tasks:
-    # 1. Navigate to the project directory
-    - export DEPLOYPATH=/home/cignaadz/public_html/cignumsolutions_ng
-
-    # 2. Move into the repo directory (where package.json is)
-    - cd $DEPLOYPATH
-
-    # 3. Install dependencies using Yarn (production mode)
+    - export APPROOT=/home/cignaadz/public_html/cignumsolutions_ng
+    - cd $APPROOT
     - /opt/alt/alt-nodejs20/root/usr/bin/yarn install --frozen-lockfile
-
-    # 4. Build the Next.js app
     - /opt/alt/alt-nodejs20/root/usr/bin/yarn build
-
-    # 5. Copy build output to a deploy folder (for static export)
-    - /opt/alt/alt-nodejs20/root/usr/bin/yarn export
-
-    # 6. Move exported files to the correct location for serving
-    - /bin/cp -R out/* $DEPLOYPATH
