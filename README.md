@@ -34,3 +34,36 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+1-pyvP}GADuj
+
+@cignum23
+
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/cignaadz/.ssh/id_rsa.
+Your public key has been saved in /home/cignaadz/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:ops5CtbTfaQW/1r8mtS1li7DGQQ//mvOrTc1qOxLIUk 
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|           .     |
+|         E  o    |
+|        . .  +   |
+|      ..S+ .o o. |
+|  . ....= o o+..+|
+|.. o.. + o.=o.++o|
+|..  o+. . =oo=++o|
+|  ..+.   .o*o.*B+|
++----[SHA256]-----+
+
+ssh -p 21098 cignaadz@66.29.153.202
+
+# generate a new key
+ssh-keygen -t ed25519 -C "cignumsolutions.net"
+
+ssh -p 21098 -i ~/.ssh/id_ed25519 cignaadz@66.29.153.202
+
+ssh -p 21098 -i "C:\Users\user\.ssh\id_ed25519" cignaadz@66.29.153.202
