@@ -1,0 +1,11 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cignaadz/public_html/cignumsolutions_ng
+    - /opt/cpanel/ea-nodejs20/bin/yarn install
+    - /opt/cpanel/ea-nodejs20/bin/yarn build
+    - /bin/rm -rf $DEPLOYPATH/*
+    - /bin/cp -R .next/static $DEPLOYPATH/
+    - /bin/cp -R public/* $DEPLOYPATH/
+    - /bin/cp .next/server/pages/* $DEPLOYPATH/
+    - /bin/cp package.json $DEPLOYPATH/
+    - /bin/cp next.config.js $DEPLOYPATH/
